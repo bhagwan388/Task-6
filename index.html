@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Elevate Alabs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <form id="contactForm" class="form-card" novalidate>
+      <h2>Contact Us</h2>
+
+      <div class="input-group">
+        <input type="text" id="name" required />
+        <label for="name">Full Name</label>
+        <small class="error-message" id="nameError"></small>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="email" required />
+        <label for="email">Email Address</label>
+        <small class="error-message" id="emailError"></small>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" rows="4" required></textarea>
+        <label for="message">Your Message</label>
+        <small class="error-message" id="messageError"></small>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <p class="success-message" id="successMessage"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
